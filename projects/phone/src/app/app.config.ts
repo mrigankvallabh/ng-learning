@@ -1,5 +1,27 @@
 import { ApplicationConfig } from '@angular/core';
+import { Route, provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http'
+export const routes: Route[] = [
+  {
+    path: '', loadComponent: () => import('./product-list/product-list.component').then(c => c.ProductListComponent)
+  },
+  {
+    path: 'products/:productId',
+    loadComponent: () => import('./product-details/product-details.component').then(c => c.ProductDetailsComponent)
+  },
+  {
+    path: 'cart',
+    loadComponent: () => import('./cart/cart.component').then(c => c.CartComponent)
+  },
+  {
+    path: 'shipping',
+    loadComponent: () => import('./shipping/shipping.component').then(c => c.ShippingComponent)
+  },
+];
 
 export const appConfig: ApplicationConfig = {
-  providers: []
+  providers: [
+    provideRouter(routes),
+    provideHttpClient()
+  ]
 };
