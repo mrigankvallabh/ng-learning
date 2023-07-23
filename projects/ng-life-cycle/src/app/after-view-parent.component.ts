@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoggerService } from './logger.service';
+import { Component } from '@angular/core';
 import { AfterViewComponent } from './after-view.component';
+import { LoggerService } from './logger.service';
 
 @Component({
   selector: 'after-view-parent',

@@ -1,5 +1,5 @@
-import { Component, DoCheck, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, DoCheck, Input } from '@angular/core';
 import { Hero } from './hero';
 
 @Component({

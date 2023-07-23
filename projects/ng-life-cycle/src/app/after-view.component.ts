@@ -1,7 +1,7 @@
-import { AfterViewChecked, AfterViewInit, Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoggerService } from './logger.service';
+import { AfterViewChecked, AfterViewInit, Component, ViewChild } from '@angular/core';
 import { ChildViewComponent } from './child-view.component';
+import { LoggerService } from './logger.service';
 
 @Component({
   selector: 'after-view',

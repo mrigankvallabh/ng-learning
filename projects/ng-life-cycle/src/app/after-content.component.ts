@@ -1,5 +1,5 @@
-import { Component, ContentChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AfterContentChecked, AfterContentInit, Component, ContentChild } from '@angular/core';
 import { ChildComponent } from './child.component';
 import { LoggerService } from './logger.service';
 
@@ -18,7 +18,7 @@ import { LoggerService } from './logger.service';
   styles: [
   ]
 })
-export class AfterContentComponent {
+export class AfterContentComponent implements AfterContentInit, AfterContentChecked {
   private prevHero = '';
   comment = '';
 

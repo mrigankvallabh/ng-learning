@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoggerService } from './logger.service';
+import { Component } from '@angular/core';
 import { AfterContentComponent } from './after-content.component';
 import { ChildComponent } from './child.component';
+import { LoggerService } from './logger.service';
 
 @Component({
   selector: 'after-content-parent',
