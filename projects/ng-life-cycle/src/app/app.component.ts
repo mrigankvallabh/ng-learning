@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PeekABooParentComponent } from './peek-a-boo-parent.component';
+import { SpyComponent } from './spy.component';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { PeekABooParentComponent } from './peek-a-boo-parent.component';
   imports: [
     CommonModule,
     PeekABooParentComponent,
+    SpyComponent
   ],
   templateUrl: './app.component.html',
 })
