@@ -4,6 +4,8 @@ import { PeekABooParentComponent } from './peek-a-boo-parent.component';
 import { SpyComponent } from './spy.component';
 import { OnChangesParentComponent } from './on-changes-parent.component';
 import { DoCheckParentComponent } from './do-check-parent.component';
+import { AfterViewParentComponent } from './after-view-parent.component';
+import { AfterContentParentComponent } from './after-content-parent.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +16,8 @@ import { DoCheckParentComponent } from './do-check-parent.component';
     SpyComponent,
     OnChangesParentComponent,
     DoCheckParentComponent,
+    AfterViewParentComponent,
+    AfterContentParentComponent,
   ],
   templateUrl: './app.component.html',
 })
