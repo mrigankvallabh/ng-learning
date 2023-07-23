@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 import { Product, products } from '../PRODUCTS.mock';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../cart.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    MatButtonModule
+  ],
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })

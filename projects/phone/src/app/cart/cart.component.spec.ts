@@ -1,9 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CartComponent } from './cart.component';
 import { provideHttpClient } from '@angular/common/http';
-import { routes } from '../app.config';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { provideRouter } from '@angular/router';
+import { routes } from '../app.config';
+import { CartComponent } from './cart.component';
 
 describe('CartComponent', () => {
   let component: CartComponent;
@@ -11,7 +12,7 @@ describe('CartComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [CartComponent],
+      imports: [CartComponent, NoopAnimationsModule],
       providers: [
         provideRouter(routes),
         provideHttpClient(),

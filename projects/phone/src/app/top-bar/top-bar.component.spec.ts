@@ -27,8 +27,8 @@ describe('TopBarComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render heading', () => {
+  it('should render brand - My Store', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('a h1')?.textContent).toContain('My Store');
+    expect(compiled.querySelector('span')?.textContent).toContain('My Store');
   });
 });

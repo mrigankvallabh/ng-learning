@@ -1,6 +1,7 @@
+import { provideHttpClient } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import { Route, provideRouter } from '@angular/router';
-import { provideHttpClient } from '@angular/common/http'
 export const routes: Route[] = [
   {
     path: '', loadComponent: () => import('./product-list/product-list.component').then(c => c.ProductListComponent)
@@ -22,6 +23,7 @@ export const routes: Route[] = [
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    provideHttpClient()
+    provideHttpClient(),
+    provideAnimations(),
   ]
 };

@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CartService } from '../cart.service';
-import { RouterLink } from '@angular/router';
+import { Component } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { RouterLink } from '@angular/router';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -12,6 +14,8 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     RouterLink,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
